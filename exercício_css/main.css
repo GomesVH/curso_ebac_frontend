@@ -29,8 +29,13 @@ header li a{
 }
 
 .container{
-    width: 1920px;
+    width: 1340px;
     margin: 0 auto;
+}
+
+img{
+    width: 300px;
+    height: 300px;
 }
 
 .articles{
@@ -103,4 +108,20 @@ section h2{
 
 #economy .articles article a{
     background-color: #ff9f1a;
+}
+
+#entretenimento{
+    background-color: #c6d7fe;
+}
+
+#entrenimento .articles article a{
+    background-color: #bebedf;
+}
+
+#tecnologia{
+    background-color: #da3c3c;
+}
+
+#tecnologia .articles article a{
+    background-color: #c01313;
 }
