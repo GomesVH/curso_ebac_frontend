@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Formulario</h2>
+
+    <form id="meuForm">
+    Campo A: <input type="number" id="CampoA" name="CampoA"><br><br>
+    Campo B: <input type="number" id="CampoB" name="CampoB"><br><br>
+    <input type="submit" value="Submit">
+    </form>
+
+    <p id="message"></p>
+
+
+    <script>
+        document.getElementById("meuForm").addEventListener("submit", function(event){
+    event.preventDefault();
+
+    var CampoA = document.getElementById("CampoA").value;
+    var CampoB = document.getElementById("CampoB").value;
+    
+    if (parseInt(CampoB) >= parseInt(CampoA)) {
+        document.getElementById("message").innerHTML = "Mensagem positiva: O formulario é valido.";
+        document.getElementById("message").style.color = "green";
+    } else {
+        document.getElementById("message").innerHTML = "Messagem negativa: O formulario é invalido.";
+        document.getElementById("message").style.color = "red";
+    }
+    });
+    </script>
+</body>
+</html>
