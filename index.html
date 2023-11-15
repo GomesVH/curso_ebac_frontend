@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciador de tarefas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>    
+    <header>
+            <h1>Gerenciador de tarefas</h1>
+            <button type="button">Nova tarefa</button>
+        </header>
+        <div class="form">
+            <form>
+                <h2>Adicionar uma nova tarefa</h2>
+                <label for="desc-tarefa"></label>
+                <input type="text" name="desc-tarefa" id="desc-tarefa" placeholder="Descreva a tarefa">
+                <button type="submit">+ Tarefa</button>
+                <button id="btn-cancelar" type="reset">Cancelar</button>
+            </form>
+        </div>
+        <ul>        
+        </ul>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>
