@@ -1,0 +1,89 @@
+body
+{
+    background-color: rgb(221, 221, 221);
+}    
+
+time
+{
+    display: block;
+}
+
+.post
+{
+    margin-bottom: 24px;
+}
+
+button
+{
+    margin: 10px; 
+    
+}
+
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+html
+{
+    overflow-x: hidden;             /*para eliminar a barra de rolagem inferior, tudo que utrpassar o tamanho da tela nao sera visivel */
+}
+
+.container
+{
+    max-width: 1024px;              /*largura maxima*/
+    width: 100%;                    /*ocupara 100% da largura*/
+    margin: 0 auto;                 /*para centralizalo na horizontal*/
+}
+
+header, footer       /*cabecalho*/
+{
+    background-color: #192a56;;   
+    padding-top: 5px;                /*espaçamento, da cor a cima no (TOP 16) (DONW 0)*/ 
+    color: #fff;                  /*cor daletras */
+}
+
+header                               /*PARA O CABEÇALHO ACOMPANHAR A ROLAGEM PARA BAIXO*/
+{
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;                     /*tira o bug do cabeçalho */
+}
+
+header > .container,
+footer > .container                  /*FILHO DIRETO DO HEADER*/ 
+{    
+    justify-content: space-between;  /*agora jogou os tracinhos pro canto direito*/ 
+    align-items: center;             /*para deixalo alinhado*/
+    padding-bottom: 10px;
+}
+
+.container-flex
+{
+    display: flex;                  
+}    
+
+.form-campo label
+{
+    font-weight: bold;
+    display: block;              /*deixa um abaixo do outro*/
+}
+
+.form-campo input,
+.form-campo textarea
+{
+    width: 100%;
+    display: block;
+    padding: 8px;
+}
+
+
+form
+{
+    max-width: 360px;
+}
