@@ -5,7 +5,7 @@ var uglify = require('gulp-uglify');
 
 // Tarefa para compilar o SASS
 gulp.task('sass', function() {
-    return gulp.src('src/scss/styles.scss/**/*.scss')
+    return gulp.src('src/scss/**/*.scss')
         .pipe(sass().on('error', sass.logError))
         .pipe(gulp.dest('dist/css/styles.css'));
 });
