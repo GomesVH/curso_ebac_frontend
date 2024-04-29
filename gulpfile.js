@@ -21,7 +21,7 @@ gulp.task('imagemin', function() {
 gulp.task('compress', function() {
     return gulp.src('src/js/script.js/**/*.js')
         .pipe(uglify())
-        .pipe(gulp.dest('src/js/script.js'));
+        .pipe(gulp.dest('src/js'));
 });
 
 var sass = require('gulp-sass')(require('sass'));
